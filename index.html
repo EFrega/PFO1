@@ -22,8 +22,8 @@
             <a href="#Contacto"><li>Contacto</li></a>
         </nav>
         <div class="right-icons">
-            <!-- falta agregar al link del github la ruta peronal -->
-            <a href="https://github.com/" class="social"><i class="bi bi-github"></i></a>
+            <!-- link a repositorio de github y linkedin mediante sus iconos -->
+            <a href="https://github.com/EFrega" class="social"><i class="bi bi-github"></i></a>
             <a href="https://www.linkedin.com/in/ezequiel-frega-27a154296/" class="social"><i class="bi bi-linkedin"></i></a>
         </div>
     </header>
@@ -45,18 +45,34 @@
         <!-- buscar los proyectos de POO y Mobile. seran tres cards con dichos proyectos y este mismo -->
         <section id="Proyectos"> 
             <h2>Proyectos</h2>
+            <div class="separacion"></div>
         </section>
         <section id="Tecnologias">
             <h2>Tecnologías</h2>
+            <div class="separacion"></div>
         </section>
         <section id="Sobre-mi">
             <h2>Sobre mí</h2>
+            <div class="separacion"></div>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita voluptates illum sapiente tenetur molestiae iusto doloribus architecto quasi nihil sed iste nostrum quia accusamus dolores, sunt perferendis aut ea! Officiis?</p>
         </section>
         <section id="Contacto">
             <h2>Contacto</h2>
-            <form>
-                <input>
+            <div class="separacion"></div>
+            <form id="formulario-contacto" class="formulario-contacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Juan">
+                <br>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" placeholder="Perez">
+                <br>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" placeholder="jperez@mail.com">
+                <br>
+                <label for="telefono">Teléfono:</label>
+                <input type="number" id="telefono" placeholder="5553868">
+                <br>
+                <input type="submit" id="enviar" class="enviar" value="ENVIAR">
             </form>
         </section>
     </main>
