@@ -118,6 +118,11 @@ td{
     width: 150px;
 }
 
+.contenedor-contacto{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .formulario-contacto{
     margin-left: 10%;
 }
@@ -125,16 +130,23 @@ td{
     color:beige;
     font-family: "Space Grotesk", sans-serif;
     padding-bottom: 1%;
+    font-size: 1.2rem;
 
 }
 .formulario-contacto > input{
-    margin-bottom: 2%;
+    margin-bottom: 10%;
+    background-color: rgb(173, 220, 238);
+    font-size: 1.2rem;
 }
 input.enviar{
     background: linear-gradient(270deg, rgb(19, 173, 199) 0%, rgb(148, 93, 214) 100%);
-    width: 80px;
-    height: 30px;
-    border-radius: 10px;
+    width: 120px;
+    height: 50px;
+    border-radius: 15px;
     color:beige;
     font-family: "Space Grotesk", sans-serif;
+}
+.parrafo-contacto{
+    max-width: 50%;
+    font-size: 1.5rem;
 }
