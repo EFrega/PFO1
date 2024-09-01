@@ -71,7 +71,7 @@ header{
 }
 
 .presentation{
-    margin-left: 150px;
+    margin-left: 10%;
     margin-top: 125px;
     margin-bottom: 125px;
 }
@@ -88,22 +88,53 @@ h2{
     color:antiquewhite;
     font-family: "Space Grotesk", sans-serif;
     font-size: 3em;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
+    margin-left: 2%;
 }
 .separacion{
-    width: 64px;
+    width: 80px;
     height: 6px;
+    margin-left: 2%;
+    margin-bottom: 2%;
     border-radius: 10px;
     background: linear-gradient(270deg, rgb(19, 173, 199) 0%, rgb(148, 93, 214) 100%);
+}
+.tecnologias-hobbies{
+    display: flex;
+    margin: 50px;
+    border-color: rgb(19, 173, 199);
+    border-width: 5px;
+    border-style: double;
+    border-radius: 5px;
+    color:beige;
+    font-family: "Space Grotesk", sans-serif;
+}
+.titulo-linea{
+font-size: 1.2rem;
+width: 200px;
+}
+td{
+    padding: 2%;
+    width: 150px;
+}
+
+.formulario-contacto{
+    margin-left: 10%;
 }
 .formulario-contacto > label{
     color:beige;
     font-family: "Space Grotesk", sans-serif;
+    padding-bottom: 1%;
+
+}
+.formulario-contacto > input{
+    margin-bottom: 2%;
 }
 input.enviar{
     background: linear-gradient(270deg, rgb(19, 173, 199) 0%, rgb(148, 93, 214) 100%);
     width: 80px;
     height: 30px;
     border-radius: 10px;
-
+    color:beige;
+    font-family: "Space Grotesk", sans-serif;
 }
