@@ -92,17 +92,17 @@ h2{
     margin-left: 2%;
 }
 .separacion{
-    width: 80px;
+    width: 10%;
     height: 6px;
     margin-left: 2%;
     margin-bottom: 2%;
     border-radius: 10px;
-    background: linear-gradient(270deg, rgb(19, 173, 199) 0%, rgb(148, 93, 214) 100%);
+    background: linear-gradient(270deg, rgb(19, 40, 199) 0%, rgb(210, 214, 93) 100%);
 }
 .tecnologias-hobbies{
     display: flex;
     margin: 50px;
-    border-color: rgb(19, 173, 199);
+    border-color: rgb(19, 40, 199);
     border-width: 5px;
     border-style: double;
     border-radius: 5px;
@@ -139,7 +139,7 @@ td{
     font-size: 1.2rem;
 }
 input.enviar{
-    background: linear-gradient(270deg, rgb(19, 173, 199) 0%, rgb(148, 93, 214) 100%);
+    background: linear-gradient(270deg, rgb(19, 40, 199) 0%, rgb(210, 214, 93) 100%);
     width: 120px;
     height: 50px;
     border-radius: 15px;
