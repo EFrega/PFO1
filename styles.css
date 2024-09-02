@@ -73,7 +73,7 @@ header{
 .presentation{
     margin-left: 10%;
     margin-top: 125px;
-    margin-bottom: 125px;
+    margin-bottom: 145px;
 }
 h1{
     color:antiquewhite;
@@ -108,6 +108,7 @@ h2{
     border-radius: 5px;
     color:beige;
     font-family: "Space Grotesk", sans-serif;
+    overflow-x: auto;
 }
 .titulo-linea{
 font-size: 1.2rem;
@@ -137,6 +138,7 @@ td{
     margin-bottom: 10%;
     background-color: rgb(173, 220, 238);
     font-size: 1.2rem;
+    max-width: 95%;
 }
 input.enviar{
     background: linear-gradient(270deg, rgb(19, 40, 199) 0%, rgb(210, 214, 93) 100%);
