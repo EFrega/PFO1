@@ -174,7 +174,7 @@ h2{
     border-radius: 5px;
     color:beige;
     font-family: "Space Grotesk", sans-serif;
-    overflow-x: auto; /* overflow para qque no desborden los iconos al reducir el tamaño del navegador, pone un scrol horizontal*/
+    overflow-x: auto; /* overflow para que no desborden los iconos al reducir el tamaño del navegador, pone un scroll horizontal*/
 }
 .titulo-linea{
 font-size: 1.2rem;
@@ -183,6 +183,10 @@ width: 200px;
 td{
     padding: 2%;
     width: 150px; /*tamaño fijo del ancho de las celdas por motivos esteticos*/
+}
+
+.sobre-mi p{
+    margin: 0% 10%;
 }
 
 .contenedor-contacto{ /* diseño flex para la seccion contacto*/
@@ -206,6 +210,10 @@ td{
     font-size: 1.2rem;
     max-width: 95%; /*se reduce el max with para que no se solapen con el parrafo de la derecha al colapsar el navegador*/
 }
+.formulario-contacto > input:focus-visible{      /* cambio del color de background cuando los elementos estan seleccionados */
+    background-color: white;
+}
+
 input.enviar{
     background: linear-gradient(270deg, rgb(19, 40, 199) 0%, rgb(210, 214, 93) 100%);
     width: 120px;
@@ -216,6 +224,11 @@ input.enviar{
 }
 input.enviar:hover{
     border:hsl(50, 45%, 49%) solid 3px; /* efecto visual para el boton de enviar del navegador*/
+    font-size: 1.3rem;
+}
+input.enviar:active{ 
+    font-size: 1.1rem;
+    color: rgb(43, 8, 105);
 }
 .parrafo-contacto{
     max-width: 50%;
