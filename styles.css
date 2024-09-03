@@ -132,7 +132,7 @@ h2{
     font-size: 1.5em;
 }
 
-.button{            /*boton de las tarjetas*/
+.button{            /*boton de las tarjetas, se deja el diseño en css aunque los botones se encuentran deshabilitados*/
     display: flex;
     flex-wrap: wrap; /* flex-wrap wrap para hacer el boton multilinea y poder centrar el texto*/
     background: linear-gradient(270deg, rgb(19, 40, 199) 0%, rgb(210, 214, 93) 100%);
