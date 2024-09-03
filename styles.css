@@ -3,8 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
 body{
-    background: linear-gradient(145deg, #0f0c29, #302b63);
-    background-attachment: fixed;
+    background: linear-gradient(145deg, #0f0c29, #302b63); /*degradado de esquima superior izquierda hacia esquina inferior derecha*/
+    background-attachment: fixed; /* fondo fijo */
     background-size: cover;
     cursor: default;
 }
@@ -12,7 +12,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    margin: 10px 20px;
     color: aliceblue;
     font-family: "Space Grotesk", sans-serif;
 }
@@ -37,18 +37,17 @@ header{
 .center-menu a{
     display: flex;
     justify-content: space-evenly;
-    margin: 0;
-    padding: 0px 30px;
+    margin: 0px 30px;
     color: aliceblue;
     font-size: 1.2em;
     text-decoration: none;
 }
 /* agregar atributos para los links ya visitados */
 
-.center-menu li:hover{
-    color: rgba(255, 255, 255, 0.75);
-    font-size: 1.4em;
-    transition: 0.4s;
+.center-menu li:hover{   /*efectos del menu de navegacion */
+    color: hsl(50, 45%, 49%);  /*color al posicionar el mouse*/
+    font-size: 1.4em; /* se agranda la letra al posicionar el mouse*/
+    transition: 0.4s; /*tiempo de transicion para los efectos*/ 
     cursor: pointer;
 }
 .right-icons{
@@ -59,26 +58,32 @@ header{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 0px 20px;
+    margin: 0px 20px;
     color: white;
     font-size: 1.5em;
 }
-.social:hover{
-    transform: scale(1.2);
+.social:hover{    /* efectos para los iconos sociales*/
+    /*  transform: scale(1.2);  primera idea de efecto  */
     transition: 0.4s;
-    transform: rotateZ(35deg);
-    color: rgba(255, 255, 255, 0.75);
+    transform: rotateZ(35deg);  /* efecto de rotacion sobre el eje z*/
+    color: hsl(50, 45%, 49%);
 }
 
 .presentation{
     margin-left: 10%;
     margin-top: 125px;
-    margin-bottom: 145px;
+    margin-bottom: 160px;
 }
 h1{
     color:antiquewhite;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 4em;
+}
+.presentation h2{
+    color:antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    margin-left: 0%;
 }
 p{
     color:beige;
@@ -91,7 +96,7 @@ h2{
     margin-bottom: 1%;
     margin-left: 2%;
 }
-.separacion{
+.separacion{         /*diseño de linea decorativa que hace subrayado de titulos de seccion*/
     width: 10%;
     height: 6px;
     margin-left: 2%;
@@ -99,16 +104,77 @@ h2{
     border-radius: 10px;
     background: linear-gradient(270deg, rgb(19, 40, 199) 0%, rgb(210, 214, 93) 100%);
 }
-.tecnologias-hobbies{
+
+.container{   /* contenedor flex para las tarjetas de la seccion proyectos*/
     display: flex;
-    margin: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10%; /* Espacio entre las tarjetas */
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card{
+    background-color: #302b63;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(3, 6, 46, 0.1), 4px 4px 8px rgba(2, 3, 24, 0.1);
+    padding: 16px;
+    margin: 5% 0%;
+    flex: 1 1 calc(35% - 10%); /* Dos tarjetas por fila con espacio entre ellas */
+    max-width: calc(40% - 10%);
+    position: relative;
+    overflow: hidden;
+}
+
+.card h2{
+    margin-bottom: 8px;
+    font-size: 1.5em;
+}
+
+.button{            /*boton de las tarjetas*/
+    display: flex;
+    flex-wrap: wrap; /* flex-wrap wrap para hacer el boton multilinea y poder centrar el texto*/
+    background: linear-gradient(270deg, rgb(19, 40, 199) 0%, rgb(210, 214, 93) 100%);
+    width: 120px;
+    height: 50px;
+    border: #140b5e solid 2px;
+    border-radius: 15px;
+    color:beige;
+    font-family: "Space Grotesk", sans-serif;
+    justify-content: center;     /* lineas 144 y 145 para centrar el texto del boton */
+    align-content: center;
+    text-decoration: none;
+}
+
+.button:hover{
+    border:hsl(50, 45%, 49%) solid 3px; /* efecto para el posicionamiento del mouse en los botones de las tarjetas*/
+}
+
+.image-container{    /* dise;o del contenedor de imagenes de las tarjetas*/
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+    margin-bottom: 16px;
+}
+
+.image-container img {  /* posicionamiento de las imagenes dentro de su contenedor*/
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+}
+
+.tecnologias-hobbies{  /* diseño de la tabla para la seccion tecnologias*/
+    display: flex;
+    margin: 5%;
     border-color: rgb(19, 40, 199);
     border-width: 5px;
     border-style: double;
     border-radius: 5px;
     color:beige;
     font-family: "Space Grotesk", sans-serif;
-    overflow-x: auto;
+    overflow-x: auto; /* overflow para qque no desborden los iconos al reducir el tamaño del navegador, pone un scrol horizontal*/
 }
 .titulo-linea{
 font-size: 1.2rem;
@@ -116,10 +182,10 @@ width: 200px;
 }
 td{
     padding: 2%;
-    width: 150px;
+    width: 150px; /*tamaño fijo del ancho de las celdas por motivos esteticos*/
 }
 
-.contenedor-contacto{
+.contenedor-contacto{ /* diseño flex para la seccion contacto*/
     display: flex;
     justify-content: space-evenly;
 }
@@ -130,15 +196,15 @@ td{
 .formulario-contacto > label{
     color:beige;
     font-family: "Space Grotesk", sans-serif;
-    padding-bottom: 1%;
+    margin-bottom: 1%; /* margen inferior para separarlos de los campos de input text*/
     font-size: 1.2rem;
 
 }
-.formulario-contacto > input{
+.formulario-contacto > input{    /* diseño de los input text*/
     margin-bottom: 10%;
-    background-color: rgb(173, 220, 238);
+    background-color: rgb(232, 225, 152);
     font-size: 1.2rem;
-    max-width: 95%;
+    max-width: 95%; /*se reduce el max with para que no se solapen con el parrafo de la derecha al colapsar el navegador*/
 }
 input.enviar{
     background: linear-gradient(270deg, rgb(19, 40, 199) 0%, rgb(210, 214, 93) 100%);
@@ -147,6 +213,9 @@ input.enviar{
     border-radius: 15px;
     color:beige;
     font-family: "Space Grotesk", sans-serif;
+}
+input.enviar:hover{
+    border:hsl(50, 45%, 49%) solid 3px; /* efecto visual para el boton de enviar del navegador*/
 }
 .parrafo-contacto{
     max-width: 50%;

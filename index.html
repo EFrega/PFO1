@@ -8,12 +8,14 @@
 </head>
 <body>
     <header>
+
         <div class="left-icons">
             <!-- Se pone un icono como marca personal pero sin el slogan, ya que por sus dimensiones resultaba ininteligible.
             El slogan se introduce al costado con una etiqueta "span" -->
             <img src="EF software solutions_transparent-sin slogan-font amarillo.png" alt="Ícono EF software solutions">
         </div><span class="slogan">Tu visión, nuestro código</span>
-        <nav class="center-menu">
+
+        <nav class="center-menu"> <!-- barra de navegacion de la pagina -->
             <!-- Cada item de la barra de navegacion es un link hacia una seccion que se encuentra mas abajo en la misma pagina
             llamandola por su ID-->
             <a href="#Proyectos"><li>Proyectos</li></a>
@@ -21,8 +23,9 @@
             <a href="#Sobre-mi"><li>Sobre mí</li></a>
             <a href="#Contacto"><li>Contacto</li></a>
         </nav>
+
         <div class="right-icons">
-            <!-- link a repositorio de github y linkedin mediante sus iconos -->
+            <!-- links a repositorio de github y linkedin mediante sus iconos -->
             <a href="https://github.com/EFrega" class="social"><i class="bi bi-github" title="GitHub"></i></a>
             <a href="https://www.linkedin.com/in/ezequiel-frega-27a154296/" class="social"><i class="bi bi-linkedin" title="LinkedIn"></i></a>
         </div>
@@ -36,19 +39,71 @@
                 Mi Portfolio Personal
             </h1>
             <!-- ubicar una imagen (foto???) -->
+            <h2>Hola, soy Ezequiel Frega</h2>
             <p>
-                Soy un taxista aprendiendo a crear páginas web útiles, escalables y mantenibles.
+                Un taxista aprendiendo a crear páginas web útiles, escalables y mantenibles.
                 <br>
                 (No utilice su laptop mientras conduce).
             </p>
             <!-- buscar algun warning para el parrafo anterior en bootstrap -->
         </div>
         <!-- buscar los proyectos de POO y Mobile. seran tres cards con dichos proyectos y este mismo -->
+
+        <!-- Comienzo de la seccion proyectos, utilizando 4 tarjetas dentro de un contenedor flex 
+            cada tarjeta contiene una imagen representativa del proyecto, titulo, pequeño parrafo de reseña y boton de link a repo github -->
         <section id="Proyectos"> 
             <h2>Proyectos</h2>
-            <div class="separacion"></div>
+            <div class="separacion"></div> <!-- linea decorativa a modo de pequeño subrayado -->
+
+            <div class="container">
+
+                <div class="card"> <!-- comienzo de la primer tarjeta-->
+                    <div class="image-container">
+                        <img src="integrador codo a codo.png" alt="Imagen integrador CaC">
+                    </div>
+                    <h2>Integrador Codo a Codo</h2>
+                    <p>
+                        Proyecto final del curso full stack Java de codo a codo, realizado durante el último cuatrimestre del 2023. 
+                        El cual fue mi primer acercamiento al desarrollo web. Habiendo utilizado Html, Css y Javascript en el front end y Java para el
+                        back end.
+                    </p>
+                    <a href="https://example.com" class="button">CÓDIGO</a> <!-- boton con link a repositorio github del proyecto -->
+                </div>
+
+                <div class="card"> <!-- comienzo de la segunda tarjeta -->
+                    <div class="image-container">
+                        <img src="https://via.placeholder.com/300x200?text=Imagen+1" alt="Imagen 1">
+                    </div>
+                    <h2>Tarjeta 2</h2>
+                    <p>Contenido de la tarjeta 2.</p>
+                    <a href="https://example.com" class="button">CÓDIGO</a>
+                </div>
+
+                <div class="card"> <!-- comienzo de la tercera tarjeta -->
+                    <div class="image-container">
+                        <img src="https://via.placeholder.com/300x200?text=Imagen+1" alt="Imagen 1">
+                    </div>
+                    <h2>Tarjeta 3</h2>
+                    <p>Contenido de la tarjeta 3.</p>
+                    <a href="https://example.com" class="button">CÓDIGO</a>
+                </div>
+
+                <div class="card"> <!-- comienzo de la cuarta tarjeta -->
+                    <div class="image-container">
+                        <img src="portfolio.png" alt="Imagen del portfolio">
+                    </div>
+                    <h2>Mi Portfolio</h2>
+                    <p>
+                        Con este proyecto, aplico las tecnologías Html y Css, para reflejar los conocimientos que he adquirido durante 
+                        lo que va de cursada sobre dichas tecnologias.
+                    </p>
+                    <a href="https://example.com" class="button">CÓDIGO</a>
+                </div>
+            </div>
         </section>
 
+        <!-- comienzo de la seccion tecnologias, consta de una tabla de tres lineas, el borde es doble y solo externo por motivos 
+        visuales las tecnologias se muestran con iconos-->
         <section id="Tecnologias">
             <h2>Tecnologías</h2>
             <div class="separacion"></div>
@@ -67,9 +122,6 @@
                     <td class="titulo-linea">Tecnologías a aprender</td>
                     <td><img src="react icon.png" alt="REACT" title="REACT"></td>
                     <td><img src="nodejs icon.png" alt="NODE JS" title="NODE JS"></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                 </tr>
                 <tr>
                     <td class="titulo-linea">Hobbies</td>
@@ -81,6 +133,7 @@
             </table>
         </section>
 
+        <!-- comienzo seccion sobre mi, se rellena el parrafo con un lorem ipsum-->
         <section id="Sobre-mi">
             <h2>Sobre mí</h2>
             <div class="separacion"></div>
