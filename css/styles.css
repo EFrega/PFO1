@@ -213,6 +213,9 @@ td{
 .formulario-contacto > input:focus-visible{      /* cambio del color de background cuando los elementos estan seleccionados */
     background-color: white;
 }
+.formulario-contacto > input:invalid{      /* borde rojo para los campos input mientras su contenido sea invalido*/
+    border: red solid 2px;
+}
 
 input.enviar{
     background: linear-gradient(270deg, rgb(19, 40, 199) 0%, rgb(210, 214, 93) 100%);
