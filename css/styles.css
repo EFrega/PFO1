@@ -50,11 +50,11 @@ header{
     transition: 0.4s; /*tiempo de transicion para los efectos*/ 
     cursor: pointer;
 }
-.right-icons{
+.right-icons{    /* estilos del contenedor de iconos de github y linkedin*/
     display: flex;
     justify-content: center;
 }
-.social{
+.social{       /* estilos de los iconos de github y linkedin*/
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -69,7 +69,7 @@ header{
     color: hsl(50, 45%, 49%);
 }
 
-.presentation{
+.presentation{      /* estilos de la seccion de presentacion de la pagina*/
     margin-left: 10%;
     margin-top: 125px;
     margin-bottom: 160px;
@@ -79,17 +79,17 @@ h1{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 4em;
 }
-.presentation h2{
+.presentation h2{     /**/
     color:antiquewhite;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2em;
     margin-left: 0%;
 }
-p{
+p{        /* estilos de todos los parrafos de la pagina*/
     color:beige;
     font-family: "Space Grotesk", sans-serif;
 }
-h2{
+h2{       /* estilos de los titulos de las secciones*/
     color:antiquewhite;
     font-family: "Space Grotesk", sans-serif;
     font-size: 3em;
@@ -117,14 +117,14 @@ h2{
 
 .card{
     background-color: #302b63;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(3, 6, 46, 0.1), 4px 4px 8px rgba(2, 3, 24, 0.1);
+    border-radius: 8px;     
+    box-shadow: 0 4px 8px rgba(3, 6, 46, 0.1), 4px 4px 8px rgba(2, 3, 24, 0.1);/*sombras para dar un efecto de profundidad a la tarjeta */
     padding: 16px;
     margin: 5% 0%;
-    flex: 1 1 calc(35% - 10%); /* Dos tarjetas por fila con espacio entre ellas */
-    max-width: calc(40% - 10%);
+    flex: 1 1 calc(35% - 10%); /*comportamiento flexible del elemento para que ocupe el 35% del contenedor padre menos el 10% del espacio total */
+    max-width: calc(40% - 10%); /*ancho máximo de la tarjeta al 40% del contenedor padre menos el 10% del espacio total */
     position: relative;
-    overflow: hidden;
+    overflow: hidden;  /*cualquier contenido que sobresalga de la tarjeta quede oculto */
 }
 
 .card h2{
@@ -144,7 +144,7 @@ h2{
     font-family: "Space Grotesk", sans-serif;
     justify-content: center;     /* lineas 144 y 145 para centrar el texto del boton */
     align-content: center;
-    text-decoration: none;
+    text-decoration: none;        /* se quita el subrayado por defecto del texto*/
 }
 
 .button:hover{
@@ -216,8 +216,11 @@ td{
 .formulario-contacto > input:user-invalid{      /* borde rojo para los campos input mientras su contenido sea invalido*/
     border: red solid 2px;
 }
+.formulario-contacto > input:user-valid{       /* borde verde para los campos inputs con contenido valido*/
+    border: green solid 2px;
+}
 
-input.enviar{
+input.enviar{      /* estilos para el boton submit del formulario */
     background: linear-gradient(270deg, rgb(19, 40, 199) 0%, rgb(210, 214, 93) 100%);
     width: 120px;
     height: 50px;
@@ -226,14 +229,14 @@ input.enviar{
     font-family: "Space Grotesk", sans-serif;
 }
 input.enviar:hover{
-    border:hsl(50, 45%, 49%) solid 3px; /* efecto visual para el boton de enviar del navegador*/
+    border:hsl(50, 45%, 49%) solid 3px; /* efecto visual para el boton de enviar del formulario al posicionar puntero encima*/
     font-size: 1.3rem;
 }
-input.enviar:active{ 
+input.enviar:active{     /* efecto para el boton al hacer click sobre el*/
     font-size: 1.1rem;
     color: rgb(43, 8, 105);
 }
-.parrafo-contacto{
+.parrafo-contacto{    /* estilos del parrafo de la seccion contacto */
     max-width: 50%;
     font-size: 1.5rem;
 }
