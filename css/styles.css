@@ -213,7 +213,7 @@ td{
 .formulario-contacto > input:focus-visible{      /* cambio del color de background cuando los elementos estan seleccionados */
     background-color: white;
 }
-.formulario-contacto > input:invalid{      /* borde rojo para los campos input mientras su contenido sea invalido*/
+.formulario-contacto > input:user-invalid{      /* borde rojo para los campos input mientras su contenido sea invalido*/
     border: red solid 2px;
 }
 
