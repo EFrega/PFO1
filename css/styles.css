@@ -44,7 +44,7 @@ header{
 }
 /* agregar atributos para los links ya visitados */
 
-.center-menu li:hover{   /*efectos del menu de navegacion */
+.center-menu a:hover{   /*efectos del menu de navegacion */
     color: hsl(50, 45%, 49%);  /*color al posicionar el mouse*/
     font-size: 1.4em; /* se agranda la letra al posicionar el mouse*/
     transition: 0.4s; /*tiempo de transicion para los efectos*/ 
@@ -211,33 +211,33 @@ td{
     justify-content: space-evenly;
 }
 
-.formulario-contacto{
+#formulario-contacto{
     margin-left: 10%;
     background-color: #302b63;
     padding: 5%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(3, 6, 46, 0.1), 4px 4px 8px rgba(2, 3, 24, 0.1);
 }
-.formulario-contacto > label{
+#formulario-contacto > label{
     color:beige;
     font-family: "Space Grotesk", sans-serif;
     margin-bottom: 1%; /* margen inferior para separarlos de los campos de input text*/
     font-size: 1.2rem;
 
 }
-.formulario-contacto > input{    /* diseño de los input text*/
+#formulario-contacto > input{    /* diseño de los input text*/
     margin-bottom: 10%;
     background-color: rgb(232, 225, 152);
     font-size: 1.2rem;
     max-width: 95%; /*se reduce el max with para que no se solapen con el parrafo de la derecha al colapsar el navegador*/
 }
-.formulario-contacto > input:focus-visible{      /* cambio del color de background cuando los elementos estan seleccionados */
+#formulario-contacto > input:focus-visible{      /* cambio del color de background cuando los elementos estan seleccionados */
     background-color: white;
 }
-.formulario-contacto > input:user-invalid{      /* borde rojo para los campos input mientras su contenido sea invalido*/
+#formulario-contacto > input:user-invalid{      /* borde rojo para los campos input mientras su contenido sea invalido*/
     border: red solid 2px;
 }
-.formulario-contacto > input:user-valid{       /* borde verde para los campos inputs con contenido valido*/
+#formulario-contacto > input:user-valid{       /* borde verde para los campos inputs con contenido valido*/
     border: green solid 2px;
 }
 
