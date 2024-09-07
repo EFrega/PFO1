@@ -108,8 +108,8 @@ h2{       /* estilos de los titulos de las secciones*/
 .cards-container{   /* contenedor flex para las tarjetas de la seccion proyectos*/
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 10%; /* Espacio entre las tarjetas */
+    justify-content: center; 
+    gap: 10%;     /* Espacio entre las tarjetas */
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
@@ -196,6 +196,9 @@ td{
 
 .formulario-contacto{
     margin-left: 10%;
+    background-color: #302b63;
+    padding: 5%;
+    border-radius: 10px;
 }
 .formulario-contacto > label{
     color:beige;
