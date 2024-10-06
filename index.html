@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/EF.ico" type="icon" sizes="16x16">
     <title>Ezequiel Frega</title>
-    <!-- <link rel="stylesheet" href="/css/reset.css"> -->
+    <link rel="stylesheet" href="css/reset.css"> 
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -14,16 +14,19 @@
         <div class="left-icons">
             <!-- Se pone un icono como marca personal pero sin el slogan, ya que por sus dimensiones resultaba ininteligible.
             El slogan se introduce al costado con una etiqueta "span" -->
-            <img src="assets/EF software solutions_transparent-sin slogan-font amarillo.png" alt="Ícono EF software solutions">
-        </div><span class="slogan">Tu visión, nuestro código</span>
+            <img class="left-icons-img" src="assets/EF software solutions_transparent-sin slogan-font amarillo.png" alt="Ícono EF software solutions">
+            <span class="slogan">Tu visión, nuestro código</span>
+        </div>
 
         <nav class="center-menu"> <!-- barra de navegacion de la pagina -->
             <!-- Cada item de la barra de navegacion es un link hacia una seccion que se encuentra mas abajo en la misma pagina
             llamandola por su ID-->
-            <a href="#Proyectos">Proyectos</a>
-            <a href="#Tecnologias">Tecnologías</a>
-            <a href="#Sobre-mi">Sobre mí</a>
-            <a href="#Contacto">Contacto</a>
+            <ul class="center-menu-list">
+                <li class="center-menu-list-item"><a href="#Proyectos">Proyectos</a></li>
+                <li class="center-menu-list-item"><a href="#Tecnologias">Tecnologías</a></li>
+                <li class="center-menu-list-item"><a href="#Sobre-mi">Sobre mí</a></li>
+                <li class="center-menu-list-item"><a href="#Contacto">Contacto</a></li>
+            </ul>
         </nav>
 
         <div class="right-icons">
@@ -37,16 +40,15 @@
         <div class="presentation">
             <div class="bienvenida">
                 <h1>
-                    Bienvenido a
-                    <br>
-                    Mi Portfolio Personal
+                    <b>Bienvenido a<br>Mi Portfolio Personal</b>
                 </h1>
                 <span><img src="assets/self image.png" alt="retrato" title="retrato" class="retrato"></span>
             </div>
             <h2>Hola, soy Ezequiel Frega</h2>
             <p>
                 Un taxista aprendiendo a crear páginas web útiles, escalables y mantenibles.
-                <br>
+            </p>
+            <p>
                 (No utilice su laptop mientras conduce).
             </p>
             <!-- buscar algun warning para el parrafo anterior en bootstrap -->
@@ -86,7 +88,9 @@
                     </p>
                     <!-- <a href="https://example.com" class="button">CÓDIGO</a> boton de link a repo-->
                 </div>
+            </div>
 
+            <div class="cards-container">
                 <div class="card"> <!-- comienzo de la tercera tarjeta proyecto aplicacion movil club deportivo-->
                     <div class="image-container">
                         <img src="assets/app mobile club deportivo.png" alt="App mobile Club Deportivo" title="App mobile Club Deportivo">
@@ -165,18 +169,18 @@
                 
                 <div class="contenedor-formulario-contacto">  <!-- formulario de ingreso de datos -->
                     <form id="formulario-contacto" class="formulario-contacto">
-                        <label for="nombre">Nombre:</label><br>
+                        <label for="nombre">Nombre:</label>
                         <input type="text" id="nombre" placeholder="Juan" required>
-                        <br>
-                        <label for="apellido">Apellido:</label><br>
+
+                        <label for="apellido">Apellido:</label>
                         <input type="text" id="apellido" placeholder="Perez" required>
-                        <br>
-                        <label for="email">Correo electrónico:</label><br>
+                    
+                        <label for="email">Correo electrónico:</label>
                         <input type="email" id="email" placeholder="jperez@mail.com" required>    
-                        <br>
-                        <label for="telefono">Teléfono:</label><br>
+                        
+                        <label for="telefono">Teléfono:</label>
                         <input type="tel" id="telefono" pattern="[0-9]{7,15}" maxlength="15" placeholder="5553868">   
-                        <br>
+                        
                         <input type="submit" id="enviar" class="enviar" value="ENVIAR">
                     </form>
                 </div>
@@ -185,7 +189,8 @@
                     <p>
                         Si desea contratar mis servicios, por favor, complete el formulario, 
                         envíe los datos y será contactado a la brevedad. 
-                        <br><br>
+                    </p>
+                    <p>
                         Muchas gracias por su visita!!!
                     </p>
                 </div>

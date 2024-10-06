@@ -2,42 +2,63 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     background: linear-gradient(145deg, #0f0c29, #302b63); /*degradado de esquima superior izquierda hacia esquina inferior derecha*/
     background-attachment: fixed; /* fondo fijo */
     background-size: cover;
     cursor: default;
+    font-family: "Space Grotesk", sans-serif;
+    color: aliceblue;
+
 }
-header{
+header{ 
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 20px;
-    color: aliceblue;
-    font-family: "Space Grotesk", sans-serif;
+    margin: 1% 0%;
+    
 }
-.left-icons{
+
+.left-icons{ 
     display: flex;
     height: 60px;
     /* intentar agrandar un poco el icono para que sea mas visible */
 }
+div .left-icons-img {
+    width: 60px;
+}
 .slogan{
+    display: flex;
+    align-items: center;
     font-family: "Mr Dafoe", cursive;
     font-weight: 400;
     font-style: normal;
     color:hsl(50, 45%, 49%);
 }
 
-.center-menu {
-    flex: 1;
+.center-menu { 
+    flex: 8;
     display: flex;
-    justify-content: center;
-    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+
 }
-.center-menu a{
+.center-menu-list{
     display: flex;
+    flex: 1;
+    flex-direction: row;
     justify-content: space-evenly;
-    margin: 0px 30px;
+    list-style-type: none;
+
+}
+li > a{
+    display: flex;
+    /* justify-content: space-around; */
     color: aliceblue;
     font-size: 1.2em;
     text-decoration: none;
@@ -49,16 +70,19 @@ header{
     font-size: 1.4em; /* se agranda la letra al posicionar el mouse*/
     transition: 0.4s; /*tiempo de transicion para los efectos*/ 
     cursor: pointer;
+    flex-wrap: nowrap;
 }
-.right-icons{    /* estilos del contenedor de iconos de github y linkedin*/
+.right-icons{   /* estilos del contenedor de iconos de github y linkedin*/
     display: flex;
-    justify-content: center;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
 }
 .social{       /* estilos de los iconos de github y linkedin*/
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0px 20px;
+
     color: white;
     font-size: 1.5em;
 }
@@ -90,7 +114,8 @@ h1{
     color:antiquewhite;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 4em;
-    margin-bottom: 0%;
+    font-weight: bolder;
+    margin-bottom: 3%;
     z-index: 1;
 }
 .retrato{
@@ -100,7 +125,9 @@ h1{
     color:antiquewhite;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2em;
+    font-weight: bolder;
     margin-left: 0%;
+    margin-bottom: 3%;
 }
 p{        /* estilos de todos los parrafos de la pagina*/
     color:beige;
@@ -124,9 +151,10 @@ h2{       /* estilos de los titulos de las secciones*/
 
 .cards-container{   /* contenedor flex para las tarjetas de la seccion proyectos*/
     display: flex;     /* aprender a ubicarlos con grid */
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center; 
-    gap: 10%;     /* Espacio entre las tarjetas */
+    justify-content: space-around; 
+
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
@@ -139,6 +167,7 @@ h2{       /* estilos de los titulos de las secciones*/
     padding: 16px;
     margin: 5% 0%;
     flex: 1 1 calc(35% - 10%); /*comportamiento flexible del elemento para que ocupe el 35% del contenedor padre menos el 10% del espacio total */
+    min-width: 300px;
     max-width: calc(40% - 10%); /*ancho máximo de la tarjeta al 40% del contenedor padre menos el 10% del espacio total */
     position: relative;
     overflow: hidden;  /*cualquier contenido que sobresalga de la tarjeta quede oculto */
@@ -166,6 +195,7 @@ h2{       /* estilos de los titulos de las secciones*/
 
 .button:hover{
     border:hsl(50, 45%, 49%) solid 3px; /* efecto para el posicionamiento del mouse en los botones de las tarjetas*/
+    cursor: pointer;
 }
 
 .image-container{    /* dise;o del contenedor de imagenes de las tarjetas*/
@@ -208,13 +238,18 @@ td{
 
 .contenedor-contacto{ /* diseño flex para la seccion contacto*/
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    flex: 1;
 }
 
 #formulario-contacto{
-    margin-left: 10%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: stretch;
     background-color: #302b63;
-    padding: 5%;
+    padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(3, 6, 46, 0.1), 4px 4px 8px rgba(2, 3, 24, 0.1);
 }
@@ -227,6 +262,7 @@ td{
 }
 #formulario-contacto > input{    /* diseño de los input text*/
     margin-bottom: 10%;
+    /* padding: 2% 0%; */
     background-color: rgb(232, 225, 152);
     font-size: 1.2rem;
     max-width: 95%; /*se reduce el max with para que no se solapen con el parrafo de la derecha al colapsar el navegador*/
@@ -252,6 +288,7 @@ input.enviar{      /* estilos para el boton submit del formulario */
 input.enviar:hover{
     border:hsl(50, 45%, 49%) solid 3px; /* efecto visual para el boton de enviar del formulario al posicionar puntero encima*/
     font-size: 1.3rem;
+    cursor: pointer;
 }
 input.enviar:active{     /* efecto para el boton al hacer click sobre el*/
     font-size: 1.1rem;
@@ -268,3 +305,12 @@ footer{
     text-align: center;
     font-size: 0.8em;
 }
+
+/* Tablet horizontal */
+@media (max-width: 1080px) { }
+/* Tablet vertical */
+@media (max-width: 768px) { }
+/* Mobil 1 */
+@media (max-width: 480px) { }
+/* Mobil 2 */
+@media (max-width: 375px) { }
