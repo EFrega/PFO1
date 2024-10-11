@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/EF.ico" type="icon" sizes="16x16">
     <title>Ezequiel Frega</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/reset.css"> 
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -17,32 +18,41 @@
             <img class="left-icons-img" src="assets/EF software solutions_transparent-sin slogan-font amarillo.png" alt="Ícono EF software solutions">
             <span class="slogan">Tu visión, nuestro código</span>
         </div>
-
-        <nav class="center-menu"> <!-- barra de navegacion de la pagina -->
-            <!-- Cada item de la barra de navegacion es un link hacia una seccion que se encuentra mas abajo en la misma pagina
-            llamandola por su ID-->
-            <ul class="center-menu-list">
-                <li class="center-menu-list-item"><a href="#Proyectos">Proyectos</a></li>
-                <li class="center-menu-list-item"><a href="#Tecnologias">Tecnologías</a></li>
-                <li class="center-menu-list-item"><a href="#Sobre-mi">Sobre mí</a></li>
-                <li class="center-menu-list-item"><a href="#Contacto">Contacto</a></li>
-            </ul>
-        </nav>
-
-        <div class="right-icons">
-            <!-- links a repositorio de github y linkedin mediante sus iconos -->
-            <a href="https://github.com/EFrega" class="social"><i class="bi bi-github" title="GitHub"></i></a>
-            <a href="https://www.linkedin.com/in/ezequiel-frega-27a154296/" class="social"><i class="bi bi-linkedin" title="LinkedIn"></i></a>
+        <div class="div-menu">
+            <input type="checkbox" id="menu-check">
+                <label id="menu" for="menu-check">
+                    <span id="menu-abrir">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                    <span id="menu-cerrar">
+                        <i class="fa-solid fa-xmark"></i>
+                    </span>
+                </label>
+            <nav class="center-menu"> <!-- barra de navegacion de la pagina -->
+                <!-- Cada item de la barra de navegacion es un link hacia una seccion que se encuentra mas abajo en la misma pagina
+                llamandola por su ID-->
+                <ul class="center-menu-list">
+                    <li class="center-menu-list-item"><a href="#Proyectos">Proyectos</a></li>
+                    <li class="center-menu-list-item"><a href="#Tecnologias">Tecnologías</a></li>
+                    <li class="center-menu-list-item"><a href="#Sobre-mi">Sobre mí</a></li>
+                    <li class="center-menu-list-item"><a href="#Contacto">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
+
+        
     </header>
 
     <main>
         <div class="presentation">
             <div class="bienvenida">
                 <h1>
-                    <b>Bienvenido a<br>Mi Portfolio Personal</b>
+                    <b>Bienvenido a</b>
                 </h1>
-                <span><img src="assets/self image.png" alt="retrato" title="retrato" class="retrato"></span>
+                <h1>
+                    <b>Mi Portfolio Personal</b>
+                </h1>
+                <!-- <span><img src="assets/self image.png" alt="retrato" title="retrato" class="retrato"></span> -->
             </div>
             <h2>Hola, soy Ezequiel Frega</h2>
             <p>
@@ -53,6 +63,7 @@
             </p>
             <!-- buscar algun warning para el parrafo anterior en bootstrap -->
         </div>
+
         <!-- buscar los proyectos de POO y Mobile. seran tres cards con dichos proyectos y este mismo -->
 
         <!-- Comienzo de la seccion proyectos, utilizando 4 tarjetas dentro de un contenedor flex 
@@ -153,10 +164,19 @@
             <h2>Sobre mí</h2>
             <div class="separacion"></div>
             <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita voluptates illum sapiente tenetur molestiae iusto doloribus architecto 
-                quasi nihil sed iste nostrum quia accusamus dolores, sunt perferendis aut ea! Officiis?. <br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ullam quae dolorum odit sit dolor omnis quod numquam excepturi, 
-                aspernatur voluptate rem esse, perferendis, laboriosam libero totam expedita possimus! Alias.
+                Hola, soy Ezequiel Frega, un apasionado estudiante de Desarrollo de Software. 
+                Aunque actualmente no tengo experiencia laboral en programación, estoy comprometido con mi aprendizaje y desarrollo en este campo. 
+                Mi objetivo es adquirir las habilidades necesarias para crear soluciones digitales efectivas y útiles.
+            </p>
+            <p>
+                Desde que comencé mi carrera, he aprendido sobre diferentes tecnologías y herramientas, 
+                y me entusiasma aplicarlas en proyectos prácticos. Estoy especialmente interesado en el desarrollo web y 
+                en cómo la tecnología puede mejorar la vida cotidiana.
+            </p>
+            <p>
+                Además de mis estudios, disfruto de aprender de la comunidad de desarrolladores y explorar nuevas tendencias 
+                en el mundo de la programación. Estoy emocionado por lo que el futuro tiene preparado para mí y por la posibilidad 
+                de contribuir con mis propios proyectos.
             </p>
         </section>
 
@@ -181,7 +201,7 @@
                         <label for="telefono">Teléfono:</label>
                         <input type="tel" id="telefono" pattern="[0-9]{7,15}" maxlength="15" placeholder="5553868">   
                         
-                        <input type="submit" id="enviar" class="enviar" value="ENVIAR">
+                        <button type="submit" id="enviar" class="enviar" value="ENVIAR">ENVIAR</button>
                     </form>
                 </div>
                 
@@ -201,6 +221,11 @@
 
     <footer>
         <p>&copy; 2024 <strong>EF Software Solutions</strong> . Todos los derechos reservados.</p>
+        <div class="right-icons">
+            <!-- links a repositorio de github y linkedin mediante sus iconos -->
+            <a href="https://github.com/EFrega" class="social"><i class="bi bi-github" title="GitHub"></i></a>
+            <a href="https://www.linkedin.com/in/ezequiel-frega-27a154296/" class="social"><i class="bi bi-linkedin" title="LinkedIn"></i></a>
+        </div>
     </footer>
 
 </body>
